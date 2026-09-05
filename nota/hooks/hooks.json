@@ -6,8 +6,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "ruby ${CLAUDE_PLUGIN_ROOT}/mcp_server/session_start.rb",
-            "timeout": 30
+            "command": "ruby \"${CLAUDE_PLUGIN_ROOT}/mcp_server/session_start.rb\"",
+            "timeout": 120
           }
         ]
       }
