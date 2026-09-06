@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "knowledge-base": {
-      "command": "ruby",
+      "command": "${NOTA_RUBY:-ruby}",
       "args": [
         "${CLAUDE_PLUGIN_ROOT}/mcp_server/boot.rb"
       ],

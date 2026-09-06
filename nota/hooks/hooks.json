@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "ruby \"${CLAUDE_PLUGIN_ROOT}/mcp_server/session_start.rb\"",
+            "command": "\"${NOTA_RUBY:-ruby}\" \"${CLAUDE_PLUGIN_ROOT}/mcp_server/session_start.rb\"",
             "timeout": 120
           }
         ]
