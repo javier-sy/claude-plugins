@@ -7,7 +7,6 @@
       ],
       "env": {
         "VOYAGE_API_KEY": "${VOYAGE_API_KEY:-}",
-        "KNOWLEDGE_DB_PATH": "${CLAUDE_PLUGIN_ROOT}/mcp_server/knowledge.db",
         "BUNDLE_GEMFILE": "${CLAUDE_PLUGIN_ROOT}/Gemfile",
         "BUNDLE_WITHOUT": "development",
         "NOTA_CMD_PREFIX": "/nota:",
