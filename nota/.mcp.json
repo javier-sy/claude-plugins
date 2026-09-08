@@ -7,8 +7,6 @@
       ],
       "env": {
         "VOYAGE_API_KEY": "${VOYAGE_API_KEY:-}",
-        "BUNDLE_GEMFILE": "${CLAUDE_PLUGIN_ROOT}/Gemfile",
-        "BUNDLE_WITHOUT": "development:index",
         "NOTA_CMD_PREFIX": "/nota:",
         "NOTA_GITHUB_REPO": "javier-sy/nota-plugin"
       },
