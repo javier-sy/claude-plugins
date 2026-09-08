@@ -1,9 +1,23 @@
 {
   "mcpServers": {
-    "knowledge-base": {
+    "setup": {
       "command": "${NOTA_RUBY:-ruby}",
       "args": [
         "${CLAUDE_PLUGIN_ROOT}/mcp_server/boot.rb"
+      ],
+      "env": {
+        "VOYAGE_API_KEY": "${VOYAGE_API_KEY:-}",
+        "BUNDLE_GEMFILE": "${CLAUDE_PLUGIN_ROOT}/Gemfile",
+        "BUNDLE_WITHOUT": "development:index",
+        "NOTA_CMD_PREFIX": "/nota:",
+        "NOTA_GITHUB_REPO": "javier-sy/nota-plugin"
+      },
+      "cwd": "${CLAUDE_PLUGIN_ROOT}"
+    },
+    "knowledge-base": {
+      "command": "${NOTA_RUBY:-ruby}",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/mcp_server/boot_knowledge.rb"
       ],
       "env": {
         "VOYAGE_API_KEY": "${VOYAGE_API_KEY:-}",
