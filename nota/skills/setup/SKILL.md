@@ -85,6 +85,7 @@ Tell the user that the plugin is fully configured and ready. Then suggest:
 - `/nota:analyze` — to generate a structured musical analysis of a composition
 - `/nota:analysis-framework` — to view or customize the analytical dimensions
 - `/nota:inspiration-framework` — to view or customize the creative dimensions
+- `/nota:license` — to see Nota's terms of use, and who owns what you make with it
 
 The `check_setup` report says whether the user's own index exists, but not how many works it holds: that count lives in `index_status`, on the knowledge base server. If the index is present, say so and offer `/nota:index` to list or update it. If it is not, briefly mention that the user can optionally index their own compositions with `/nota:index`.
 
